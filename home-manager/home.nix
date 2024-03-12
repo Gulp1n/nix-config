@@ -47,7 +47,6 @@
     };
   };
 
-  # TODO: Set your username
   home = {
     username = "gulp1n";
     homeDirectory = "/home/gulp1n";
@@ -55,7 +54,7 @@
 
   programs.zsh = {
 	enable = true;
-	ohMyZsh = {
+	oh-my-zsh = {
 		enable = true;
 		theme = "robbyrussell";
 	};
@@ -76,11 +75,16 @@
 	logseq
 	gh
 	neovim
+	lazygit
   ];
 
   # Enable home-manager and git
   programs.home-manager.enable = true;
-  programs.git.enable = true;
+  programs.git = {
+    enable = true;
+    userName = "Gulp1n";
+    userEmail = "abeldenouden@hotmail.com";
+  };
 
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";

@@ -109,6 +109,7 @@
     userSettings = {
       "files.autoSave" = "afterDelay";
       "workbench.colorTheme" = "Catppuccin Frappé";
+      "editor.fontFamily" = "'JetBrainsMono Nerd Font'";
     };
   };
 

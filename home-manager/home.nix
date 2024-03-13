@@ -63,19 +63,22 @@
   # Add stuff for your user as you see fit:
   # programs.neovim.enable = true;
   home.packages = with pkgs; [ 
+    # basic opperation
   	firefox
-	kate
-	neofetch
-	parsec-bin
-	kitty
-	zsh
-	git
-	whatsapp-for-linux
-	discord
-	logseq
-	gh
-	neovim
-	lazygit
+    neofetch
+    zsh
+    kitty
+    git
+    gh
+    # coding
+    lazygit
+    neovim
+    # communication
+    whatsapp-for-linux
+    discord
+    #productivity
+    parsec-bin
+    logseq
   ];
 
   # Enable home-manager, git and github
@@ -91,11 +94,22 @@
   programs.vscode = {
     enable = true;
     package = pkgs.vscodium;
+    enableExtensionUpdateCheck = false;
     extensions = with pkgs.vscode-extensions; [
       bbenoist.nix
       catppuccin.catppuccin-vsc
       vscodevim.vim
     ];
+    keybindings = [
+      {
+        key = "ctrl+shift+`";
+        command = "workbench.action.toggleMaximizedPanel";
+      }
+    ];
+    userSettings = {
+      "files.autoSave" = "afterDelay";
+      "workbench.colorTheme" = "Catppuccin Frappé";
+    };
   };
 
   # Nicely reload system units when changing configs

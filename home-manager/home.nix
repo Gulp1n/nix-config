@@ -78,12 +78,24 @@
 	lazygit
   ];
 
-  # Enable home-manager and git
+  # Enable home-manager, git and github
   programs.home-manager.enable = true;
   programs.git = {
     enable = true;
     userName = "Gulp1n";
     userEmail = "abeldenouden@hotmail.com";
+  };
+  programs.gh.enable = true;
+
+  # VSCode config
+  programs.vscode = {
+    enable = true;
+    package = pkgs.vscodium;
+    extensions = with pkgs.vscode-extensions; [
+      bbenoist.nix
+      catppuccin.catppuccin-vsc
+      vscodevim.vim
+    ];
   };
 
   # Nicely reload system units when changing configs

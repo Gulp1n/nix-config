@@ -145,7 +145,7 @@
     efi.canTouchEfiVariables = true;
   };
 
-  # TODO: Configure your system-wide user settings (groups, etc), add more users as needed.
+  # Configure your system-wide user settings (groups, etc), add more users as needed.
   users.users = {
     gulp1n = {
       initialPassword = "password";
@@ -157,8 +157,15 @@
       extraGroups = ["wheel" "networkmanager"];
     };
   };
+
+  # enable zsh
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
+
+  # install fonts
+  fonts.packages = with pkgs; [
+    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+  ];
 
   # This setups a SSH server. Very important if you're setting up a headless system.
   # Feel free to remove if you don't need it.

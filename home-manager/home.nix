@@ -74,6 +74,7 @@
     # coding
     lazygit
     neovim
+    nil # nix lsp
 
     # communication
     whatsapp-for-linux
@@ -100,7 +101,7 @@
     package = pkgs.vscodium;
     enableExtensionUpdateCheck = false;
     extensions = with pkgs.vscode-extensions; [
-      bbenoist.nix
+      jnoortheen.nix-ide
       catppuccin.catppuccin-vsc
       vscodevim.vim
     ];
@@ -113,8 +114,20 @@
     userSettings = {
       "files.autoSave" = "afterDelay";
       "workbench.colorTheme" = "Catppuccin Latte";
+      "workbench.iconTheme" = "catppuccin-latte";
       "editor.fontFamily" = "'JetBrainsMono Nerd Font'";
       "github.gitAuthentication" = false;
+
+      #nix lsp
+      "nix.enableLanguageServer" = true;
+      "nix.serverPath" = "nil";
+      "nix.serverSettings" = {
+        "nil" = {
+          "formatting" = {
+            "command" = ["nixpkgs-fmt"];
+          };
+        };
+      };
     };
   };
 

@@ -164,7 +164,10 @@
 
   # install fonts
   fonts.packages = with pkgs; [
-    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+    (nerdfonts.override { fonts = [
+      # List nerdfonts you want installed here
+      "JetBrainsMono"
+    ]; })
   ];
 
   # This setups a SSH server. Very important if you're setting up a headless system.

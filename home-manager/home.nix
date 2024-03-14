@@ -53,10 +53,10 @@
   };
 
   programs.zsh = {
-	enable = true;
-	oh-my-zsh = {
-		enable = true;
-		theme = "robbyrussell";
+    enable = true;
+    oh-my-zsh = {
+      enable = true;
+      theme = "robbyrussell";
 	};
   };
 
@@ -70,14 +70,18 @@
     kitty
     git
     gh
+
     # coding
     lazygit
     neovim
+
     # communication
     whatsapp-for-linux
     discord
+
     #productivity
     parsec-bin
+    onlyoffice-bin
     logseq
   ];
 
@@ -108,8 +112,9 @@
     ];
     userSettings = {
       "files.autoSave" = "afterDelay";
-      "workbench.colorTheme" = "Catppuccin Frappé";
+      "workbench.colorTheme" = "Catppuccin Latte";
       "editor.fontFamily" = "'JetBrainsMono Nerd Font'";
+      "github.gitAuthentication" = false;
     };
   };
 

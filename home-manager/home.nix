@@ -82,6 +82,8 @@
 
     #productivity
     parsec-bin
+    wireguard-tools
+    tailscale
     onlyoffice-bin
     logseq
   ];

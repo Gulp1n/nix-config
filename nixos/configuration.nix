@@ -102,18 +102,15 @@
     LC_TIME = "nl_NL.UTF-8";
   };
 
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
-
   # Enable the KDE Plasma Desktop Environment.
-  services.xserver.displayManager.sddm.enable = true;
-  services.xserver.desktopManager.plasma5.enable = true;
+  services.xserver.enable = true; # this is cursed
+  services.xserver.displayManager.sddm.wayland.enable = true;
+  services.desktopManager.plasma6.enable = true;
 
-  # Configure keymap in X11
-  services.xserver = {
-    layout = "us";
-    xkbVariant = "";
-  };
+  # Remove KDE bloat
+  environment.plasma6.excludePackages = with pkgs.kdePackages; [
+    kate
+  ];
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
@@ -154,7 +151,10 @@
         # TODO: Add your SSH public key(s) here, if you plan on using SSH to connect
       ];
       # TODO: Be sure to add any other groups you need (such as networkmanager, audio, docker, etc)
-      extraGroups = ["wheel" "networkmanager"];
+      extraGroups = [
+        "wheel" 
+        "networkmanager"
+        ];
     };
   };
 

@@ -85,6 +85,7 @@
     wireguard-tools
     tailscale
     onlyoffice-bin
+    onedriver
     logseq
   ];
 

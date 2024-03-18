@@ -140,6 +140,11 @@
     source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nix-config/home-manager/dotconfig/vencord/";
     target = "Vencord/";
   };
+  xdg.configFile.kitty = {
+    enable = true;
+    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nix-config/home-manager/dotconfig/kitty/";
+    target = "kitty/";
+  };
 
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";

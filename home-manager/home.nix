@@ -57,7 +57,7 @@
     oh-my-zsh = {
       enable = true;
       theme = "robbyrussell";
-	};
+	  };
   };
 
   # Add stuff for your user as you see fit:
@@ -78,7 +78,7 @@
 
     # communication
     whatsapp-for-linux
-    discord
+    (discord.override { withVencord = true; })
 
     #productivity
     parsec-bin
@@ -132,6 +132,13 @@
         };
       };
     };
+  };
+
+  #Dotfiles
+  xdg.configFile.vencord = {
+    enable = true;
+    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nix-config/home-manager/dotconfig/vencord/";
+    target = "Vencord/";
   };
 
   # Nicely reload system units when changing configs

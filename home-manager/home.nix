@@ -120,6 +120,7 @@
       "workbench.iconTheme" = "catppuccin-latte";
       "editor.fontFamily" = "'JetBrainsMono Nerd Font'";
       "github.gitAuthentication" = false;
+      "git.terminalAuthentication" = false;
 
       #nix lsp
       "nix.enableLanguageServer" = true;

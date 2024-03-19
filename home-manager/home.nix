@@ -136,7 +136,7 @@
   };
 
   #Dotfiles
-  xdg.configFile.vencord = {
+  xdg.configFile.Vencord = {
     enable = true;
     source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nix-config/home-manager/dotconfig/vencord/";
     target = "Vencord/";

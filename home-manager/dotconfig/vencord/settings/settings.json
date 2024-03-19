@@ -3,7 +3,9 @@
     "autoUpdate": false,
     "autoUpdateNotification": true,
     "useQuickCss": true,
-    "themeLinks": [],
+    "themeLinks": [
+        "https://raw.githubusercontent.com/catppuccin/discord/main/themes/latte.theme.css"
+    ],
     "enabledThemes": [],
     "enableReactDevtools": false,
     "frameless": false,
@@ -95,13 +97,15 @@
             "enabled": false
         },
         "CallTimer": {
-            "enabled": true
+            "enabled": true,
+            "format": "stopwatch"
         },
         "ClearURLs": {
             "enabled": false
         },
         "ClientTheme": {
-            "enabled": false
+            "enabled": false,
+            "color": "313338"
         },
         "ColorSighted": {
             "enabled": false
@@ -142,7 +146,8 @@
             "enableStickerBypass": true,
             "enableStreamQualityBypass": true,
             "transformStickers": true,
-            "transformEmojis": true
+            "transformEmojis": true,
+            "transformCompoundSentence": false
         },
         "FakeProfileThemes": {
             "enabled": false
@@ -464,7 +469,8 @@
             "enabled": false
         },
         "VolumeBooster": {
-            "enabled": true
+            "enabled": true,
+            "multiplier": 2
         },
         "WhoReacted": {
             "enabled": false
@@ -486,6 +492,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1710751618335
+        "settingsSyncVersion": 1710773194153
     }
 }

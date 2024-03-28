@@ -211,7 +211,9 @@
             "enabled": false
         },
         "MemberCount": {
-            "enabled": false
+            "enabled": true,
+            "memberList": true,
+            "toolTip": true
         },
         "MessageClickActions": {
             "enabled": false
@@ -220,13 +222,19 @@
             "enabled": false
         },
         "MessageLogger": {
-            "enabled": false
+            "enabled": true,
+            "deleteStyle": "text",
+            "ignoreBots": false,
+            "ignoreSelf": false,
+            "ignoreUsers": "",
+            "ignoreChannels": "",
+            "ignoreGuilds": ""
         },
         "MessageTags": {
             "enabled": false
         },
         "MoreCommands": {
-            "enabled": false
+            "enabled": true
         },
         "MoreKaomoji": {
             "enabled": true
@@ -238,7 +246,7 @@
             "enabled": false
         },
         "MutualGroupDMs": {
-            "enabled": false
+            "enabled": true
         },
         "NewGuildSettings": {
             "enabled": false
@@ -253,13 +261,15 @@
             "enabled": false
         },
         "NoMosaic": {
-            "enabled": false
+            "enabled": false,
+            "inlineVideo": true,
+            "mediaLayoutType": "STATIC"
         },
         "NoPendingCount": {
             "enabled": false
         },
         "NoProfileThemes": {
-            "enabled": false
+            "enabled": true
         },
         "NoRPC": {
             "enabled": false
@@ -274,7 +284,7 @@
             "enabled": false
         },
         "NoTypingAnimation": {
-            "enabled": false
+            "enabled": true
         },
         "NoUnblockToJump": {
             "enabled": false
@@ -301,13 +311,15 @@
             "enabled": false
         },
         "PermissionFreeWill": {
-            "enabled": false
+            "enabled": true,
+            "lockout": true,
+            "onboarding": true
         },
         "PermissionsViewer": {
-            "enabled": false
+            "enabled": true
         },
         "petpet": {
-            "enabled": false
+            "enabled": true
         },
         "PictureInPicture": {
             "enabled": false
@@ -325,13 +337,18 @@
             "enabled": false
         },
         "PronounDB": {
-            "enabled": false
+            "enabled": true,
+            "pronounsFormat": "LOWERCASE",
+            "pronounSource": 0,
+            "showSelf": true,
+            "showInMessages": true,
+            "showInProfile": true
         },
         "QuickMention": {
             "enabled": false
         },
         "QuickReply": {
-            "enabled": false
+            "enabled": true
         },
         "ReactErrorDecoder": {
             "enabled": false
@@ -439,7 +456,7 @@
             "enabled": false
         },
         "UrbanDictionary": {
-            "enabled": false
+            "enabled": true
         },
         "UserVoiceShow": {
             "enabled": false
@@ -454,10 +471,10 @@
             "enabled": false
         },
         "VcNarrator": {
-            "enabled": false
+            "enabled": true
         },
         "VencordToolbox": {
-            "enabled": false
+            "enabled": true
         },
         "ViewIcons": {
             "enabled": false
@@ -492,6 +509,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1710773194153
+        "settingsSyncVersion": 1710861816763
     }
 }

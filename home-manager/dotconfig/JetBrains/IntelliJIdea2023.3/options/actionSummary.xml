@@ -1,0 +1,22 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="EditorBackSpace">
+      <i c="6" l="1712319308968" />
+    </e>
+    <e n="ShowSettings">
+      <i c="1" l="1712319409385" />
+    </e>
+    <e n="WelcomeScreen.CreateNewProject">
+      <i c="1" l="1712319265141" />
+    </e>
+    <e n="WelcomeScreen.OpenProject">
+      <i c="1" l="1712319387147" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.SquareAnActionButton">
+      <i c="1" l="1712319400601" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.customFrameDecorations.header.toolbar.MainMenuButton$ShowMenuAction">
+      <i c="1" l="1712319405874" />
+    </e>
+  </component>
+</application>

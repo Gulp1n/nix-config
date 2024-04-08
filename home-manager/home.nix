@@ -75,6 +75,7 @@
     lazygit
     neovim
     nil # nix lsp
+    jetbrains.idea-ultimate
 
     # communication
     whatsapp-for-linux
@@ -87,6 +88,12 @@
     onlyoffice-bin
     onedriver
     logseq
+
+    #media
+    vlc
+    ffmpeg
+    x32edit
+    spotify
   ];
 
   # Enable home-manager, git and github
@@ -145,6 +152,11 @@
     enable = true;
     source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nix-config/home-manager/dotconfig/kitty/";
     target = "kitty/";
+  };
+  xdg.configFile.Intellij = {
+    enable = true;
+    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nix-config/home-manager/dotconfig/JetBrains/IntelliJIdea2023.3/options/";
+    target = "JetBrains/IntelliJIdea2023.3/options/";
   };
 
   # Nicely reload system units when changing configs

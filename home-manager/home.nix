@@ -58,6 +58,15 @@
       enable = true;
       theme = "robbyrussell";
 	  };
+
+    shellAliases = {
+      ls = "eza -lh";
+      la = "eza -lah";
+      shutdown = "systemctl poweroff";
+      reboot = "systemctl reboot";
+      vim = "nvim";
+      lgit = "lazygit";
+    };
   };
 
   # Add stuff for your user as you see fit:
@@ -70,12 +79,16 @@
     kitty
     git
     gh
+    eza
+    dust
 
     # coding
     lazygit
     neovim
     nil # nix lsp
     jetbrains.idea-ultimate
+    # jdk21
+    # jdk17
 
     # communication
     whatsapp-for-linux
@@ -94,6 +107,13 @@
     ffmpeg
     x32edit
     spotify
+    helvum
+    ardour
+    x42-plugins
+
+    #entertainment
+    prismlauncher
+    openttd
   ];
 
   # Enable home-manager, git and github
@@ -126,6 +146,7 @@
       "workbench.colorTheme" = "Catppuccin Latte";
       "workbench.iconTheme" = "catppuccin-latte";
       "editor.fontFamily" = "'JetBrainsMono Nerd Font'";
+      "editor.minimap.renderCharacters" = true;
       "github.gitAuthentication" = false;
       "git.terminalAuthentication" = false;
 
@@ -141,6 +162,8 @@
       };
     };
   };
+  home.file.".jdks/openjdk21".source = pkgs.openjdk21;
+  home.file.".jdks/openjdk17".source = pkgs.openjdk17;
 
   #Dotfiles
   xdg.configFile.Vencord = {

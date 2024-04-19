@@ -142,6 +142,8 @@
     efi.canTouchEfiVariables = true;
   };
 
+  # boot.kernelPackages = pkgs.linuxPackages_zen;
+
   # Configure your system-wide user settings (groups, etc), add more users as needed.
   users.users = {
     gulp1n = {
@@ -161,6 +163,8 @@
   # enable zsh
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
+
+  hardware.bluetooth.enable = true;
 
   # install fonts
   fonts.packages = with pkgs; [

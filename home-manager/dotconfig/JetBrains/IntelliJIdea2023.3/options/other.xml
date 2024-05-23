@@ -66,7 +66,7 @@
     </option>
     <option name="default" value="false" />
     <option name="ideVersion" value="2023.3.3" />
-    <option name="lastUpdateTime" value="1712319395057" />
+    <option name="lastUpdateTime" value="1712738565204" />
     <option name="supportedGradleVersions">
       <list>
         <option value="3.0" />
@@ -126,6 +126,7 @@
         <option value="8.4" />
         <option value="8.5" />
         <option value="8.6" />
+        <option value="8.7" />
       </list>
     </option>
     <option name="supportedJavaVersions">
@@ -147,33 +148,52 @@
       </list>
     </option>
   </component>
+  <component name="JdkInstallerHistory">
+    <option name="installedItems">
+      <installed-jdk>
+        <option name="fullText" value="Eclipse Temurin (AdoptOpenJDK HotSpot) 21.0.2" />
+        <option name="installDir" value="/home/gulp1n/.jdks/temurin-21.0.2" />
+        <option name="sha256" value="454bebb2c9fe48d981341461ffb6bf1017c7b7c6e15c6b0c29b959194ba3aaa5" />
+        <option name="url" value="https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jdk_x64_linux_hotspot_21.0.2_13.tar.gz" />
+        <option name="versionText" value="21.0.2" />
+      </installed-jdk>
+    </option>
+  </component>
   <component name="NotRoamableUiSettings">
     <option name="presentationModeIdeScale" value="1.75" />
   </component>
   <component name="PropertyService"><![CDATA[{
   "keyToString": {
-    "LAST_CALCULATED_COLOR_INDEX_KEY": "1",
+    "LAST_CALCULATED_COLOR_INDEX_KEY": "3",
     "MarketplacePluginsSearchHistory": "idea\nide\ni\nnix\nni",
     "NextRunPlatformUpdateBuild": "IU-233.15026.9",
     "NextRunPlatformUpdateVersion": "2023.3.6",
+    "PluginConfigurable.selectionTab": "1",
+    "SettingsSearchHistory": "jdk\njvm\njava",
     "ai.assistant.toolwindow.shown.at.start": "true",
     "ask.about.ctrl.y.shortcut.v2": "true",
+    "build.toolwindow.Sync.selection.state": "com.intellij.build.BuildTreeConsoleView",
+    "build.toolwindow.run.selection.state": "com.intellij.build.BuildTreeConsoleView",
     "bundled.plugins.list.saved.version": "IU-233.14015.106",
     "com.intellij.ide.projectWizard.generators.JavaNewProjectWizard$Step.selectedStep": "IntelliJ",
     "com.intellij.ide.wizard.NewProjectWizardLanguageStep.selectedStep": "Java",
+    "com.intellij.openapi.roots.ui.configuration.TabbedModuleEditor.selectedEditor": "Sources",
     "defaultJdkConfigured": "true",
     "evlsprt3.233": "5",
     "experimental.ui.on.first.startup": "true",
     "experimental.ui.used.version": "233.14015.106",
+    "file.gist.reindex.count": "26",
     "fileTypeChangedCounter": "1",
     "fontSizeToResetConsole": "13.0",
     "fontSizeToResetEditor": "13.0",
     "gotit.previous.run": "IU-233.14015.106",
     "ide.memory.adjusted": "true",
+    "ideavim.statistics.timestamp": "1712738568910",
     "input.method.disabler.muted": "true",
     "installed.kotlin.plugin.version": "233.14015.106-IJ",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/home/gulp1n/code/nix-config-avt",
+    "kotlin.lastUpdateCheck": "1712742468473",
+    "last_opened_file_path": "/home/gulp1n/.jdks/openjdk17/lib/openjdk",
     "migrated.non.roamable.values.from.general.settings": "true",
     "previousColorScheme": "_@user_Catppuccin Latte",
     "project.wizard.group": "NPW.simple-project",
@@ -182,6 +202,11 @@
   },
   "keyToStringList": {
     "file.chooser.recent.files": [
+      "/home/gulp1n/.jdks/openjdk17/lib/openjdk",
+      "/home/gulp1n/.jdks/openjdk21/lib/openjdk",
+      "/nix/store/vrkmyfvmlra5qyyfsjx1vvr9rnsg964l-openjdk-21+35/lib/openjdk",
+      "/home/gulp1n/code/AulaControl",
+      "/home/gulp1n/code/AVTKiosk",
       "/home/gulp1n/code/nix-config-avt"
     ],
     "fileTypeDetectors": [
@@ -193,7 +218,19 @@
       "com.jetbrains.nodejs.util.NodeFileTypeDetector$JavaScriptFileTypeDetector",
       "com.jetbrains.nodejs.util.NodeFileTypeDetector$TypeScriptFileTypeDetector",
       "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ],
+    "kotlin-gradle-user-dirs": [
+      "/home/gulp1n/.gradle"
     ]
   }
 }]]></component>
+  <component name="ShownTips">{
+  &quot;shownTips&quot;: {
+    &quot;ShowUsages&quot;: 1712738570662
+  },
+  &quot;proposedTips&quot;: {
+    &quot;ShowUsages&quot;: 1712738570584
+  },
+  &quot;tipsOrderSeed&quot;: 1712738570567
+}</component>
 </application>

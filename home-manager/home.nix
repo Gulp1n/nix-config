@@ -69,7 +69,6 @@
     };
   };
 
-  # Add stuff for your user as you see fit:
   # programs.neovim.enable = true;
   home.packages = with pkgs; [ 
     # basic opperation
@@ -87,8 +86,7 @@
     neovim
     nil # nix lsp
     jetbrains.idea-ultimate
-    # jdk21
-    # jdk17
+    waydroid
 
     # communication
     whatsapp-for-linux
@@ -108,12 +106,14 @@
     x32edit
     spotify
     helvum
-    ardour
+    carla
     x42-plugins
 
     #entertainment
     prismlauncher
     openttd
+
+    krita
   ];
 
   # Enable home-manager, git and github
@@ -162,6 +162,8 @@
       };
     };
   };
+
+  # Java stuff
   home.file.".jdks/openjdk21".source = pkgs.openjdk21;
   home.file.".jdks/openjdk17".source = pkgs.openjdk17;
 

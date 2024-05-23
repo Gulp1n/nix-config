@@ -18,8 +18,41 @@
             </RecentProjectMetaInfo>
           </value>
         </entry>
+        <entry key="$USER_HOME$/code/AVTKiosk">
+          <value>
+            <RecentProjectMetaInfo frameTitle="AVTKiosk – Main.kt" projectWorkspaceId="2etzG9SEP0ofR1zCdt7MMv0b8tK">
+              <option name="activationTimestamp" value="1712738715379" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IU-233.14015.106" />
+              <option name="buildTimestamp" value="1706158860000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="2" />
+              </option>
+              <frame x="0" y="0" width="1920" height="1036" extendedState="6" />
+              <option name="productionCode" value="IU" />
+              <option name="projectOpenTimestamp" value="1712738564983" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/AulaControl">
+          <value>
+            <RecentProjectMetaInfo frameTitle="AulaControl" opened="true" projectWorkspaceId="2euHDFXNBlKQPTT08EUa2luCxvN">
+              <option name="activationTimestamp" value="1712749551096" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IU-233.14015.106" />
+              <option name="buildTimestamp" value="1706158860000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="3" />
+              </option>
+              <frame x="0" y="0" width="1920" height="1036" extendedState="6" />
+              <option name="productionCode" value="IU" />
+              <option name="projectOpenTimestamp" value="1712738716407" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
       </map>
     </option>
-    <option name="lastOpenedProject" value="$USER_HOME$/code/nix-config-avt" />
+    <option name="lastOpenedProject" value="$USER_HOME$/code/AulaControl" />
+    <option name="lastProjectLocation" value="$USER_HOME$/code" />
   </component>
 </application>

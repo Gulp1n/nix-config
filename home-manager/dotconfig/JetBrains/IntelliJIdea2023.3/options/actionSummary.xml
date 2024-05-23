@@ -1,22 +1,127 @@
 <application>
   <component name="ActionsLocalSummary">
+    <e n="$Copy">
+      <i c="1" l="1712742314140" />
+    </e>
     <e n="EditorBackSpace">
-      <i c="6" l="1712319308968" />
+      <i c="41" l="1712749372199" />
+    </e>
+    <e n="EditorDeleteToWordStart">
+      <i c="11" l="1712741669319" />
+    </e>
+    <e n="EditorEscape">
+      <i c="1" l="1712741091849" />
+    </e>
+    <e n="EditorNextWord">
+      <i c="10" l="1712741751450" />
+    </e>
+    <e n="EditorPaste">
+      <i c="3" l="1712749405550" />
+    </e>
+    <e n="EditorPreviousWord">
+      <i c="4" l="1712742898440" />
+    </e>
+    <e n="ExternalSystem.AttachProject">
+      <i c="1" l="1712741335010" />
+    </e>
+    <e n="ExternalSystem.CollapseAll">
+      <i c="1" l="1712749425217" />
+    </e>
+    <e n="ExternalSystem.ExpandAll">
+      <i c="1" l="1712749424224" />
+    </e>
+    <e n="ExternalSystem.RefreshAllProjects">
+      <i c="24" l="1712749414534" />
+    </e>
+    <e n="ExternalSystem.ShowSettings">
+      <i c="7" l="1712749266199" />
+    </e>
+    <e n="ExternalSystem.ShowSettingsGroup">
+      <i c="7" l="1712749265238" />
+    </e>
+    <e n="Git.Branches">
+      <i c="1" l="1712741500497" />
+    </e>
+    <e n="Gradle.DownloadSources">
+      <i c="1" l="1712749515585" />
+    </e>
+    <e n="Gradle.ExecuteTask">
+      <i c="11" l="1712749532382" />
+    </e>
+    <e n="OpenFile">
+      <i c="1" l="1712738709610" />
+    </e>
+    <e n="PasteMultiple">
+      <i c="1" l="1712741339494" />
+    </e>
+    <e n="QuickChangeScheme">
+      <i c="1" l="1712742264065" />
+    </e>
+    <e n="RedesignedRunConfigurationSelector">
+      <i c="3" l="1712749419340" />
+    </e>
+    <e n="SettingsEntryPoint">
+      <i c="2" l="1712740727252" />
+    </e>
+    <e n="ShowProjectStructureSettings">
+      <i c="6" l="1712749173244" />
     </e>
     <e n="ShowSettings">
-      <i c="1" l="1712319409385" />
+      <i c="12" l="1712749167834" />
+    </e>
+    <e n="Stop">
+      <i c="1" l="1712741134285" />
+    </e>
+    <e n="TemplateProjectStructure">
+      <i c="1" l="1712742690670" />
     </e>
     <e n="WelcomeScreen.CreateNewProject">
       <i c="1" l="1712319265141" />
     </e>
     <e n="WelcomeScreen.OpenProject">
-      <i c="1" l="1712319387147" />
+      <i c="2" l="1712738551917" />
+    </e>
+    <e n="com.intellij.build.WarningsToggleAction">
+      <i c="2" l="1712739903687" />
+    </e>
+    <e n="com.intellij.execution.actions.StopProcessAction">
+      <i c="1" l="1712748787929" />
+    </e>
+    <e n="com.intellij.execution.impl.ConsoleViewImpl$HyperlinkNavigationAction">
+      <i c="1" l="1712747522236" />
+    </e>
+    <e n="com.intellij.ide.actions.runAnything.RunAnythingPopupUI$10">
+      <i c="1" l="1712741140215" />
+    </e>
+    <e n="com.intellij.openapi.actionSystem.AnActionWrapper">
+      <i c="275" l="1712748783109" />
+    </e>
+    <e n="com.intellij.openapi.externalSystem.util.ExternalSystemUtil$6">
+      <i c="1" l="1712739794104" />
+    </e>
+    <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
+      <i c="2" l="1712741117530" />
+    </e>
+    <e n="com.intellij.openapi.project.DumbAwareAction$SimpleDumbAwareAction">
+      <i c="9" l="1712749538634" />
+    </e>
+    <e n="com.intellij.openapi.roots.ui.configuration.projectRoot.BaseStructureConfigurable$MyRemoveAction">
+      <i c="3" l="1712749254507" />
+    </e>
+    <e n="com.intellij.openapi.ui.DialogWrapper$5">
+      <i c="5" l="1712743076487" />
     </e>
     <e n="com.intellij.openapi.wm.impl.SquareAnActionButton">
-      <i c="1" l="1712319400601" />
+      <i c="33" l="1712749495188" />
     </e>
     <e n="com.intellij.openapi.wm.impl.customFrameDecorations.header.toolbar.MainMenuButton$ShowMenuAction">
-      <i c="1" l="1712319405874" />
+      <i c="26" l="1712749171391" />
+    </e>
+    <e n="com.intellij.toolWindow.ToolWindowHeader$HideAction">
+      <i c="10" l="1712749164596" />
+    </e>
+    <e n="com.intellij.ui.AnActionButton$AnActionButtonWrapper">
+      <i c="1" l="1712749238177" />
     </e>
   </component>
 </application>

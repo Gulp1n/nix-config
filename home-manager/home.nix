@@ -85,8 +85,6 @@
     lazygit
     neovim
     nil # nix lsp
-    jetbrains.idea-ultimate
-    waydroid
 
     # communication
     whatsapp-for-linux
@@ -94,8 +92,6 @@
 
     #productivity
     parsec-bin
-    wireguard-tools
-    tailscale
     onlyoffice-bin
     onedriver
     logseq
@@ -105,15 +101,10 @@
     ffmpeg
     x32edit
     spotify
-    helvum
-    carla
-    x42-plugins
 
     #entertainment
     prismlauncher
     openttd
-
-    krita
   ];
 
   # Enable home-manager, git and github
@@ -163,10 +154,6 @@
     };
   };
 
-  # Java stuff
-  home.file.".jdks/openjdk21".source = pkgs.openjdk21;
-  home.file.".jdks/openjdk17".source = pkgs.openjdk17;
-
   #Dotfiles
   xdg.configFile.Vencord = {
     enable = true;
@@ -177,11 +164,6 @@
     enable = true;
     source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nix-config/home-manager/dotconfig/kitty/";
     target = "kitty/";
-  };
-  xdg.configFile.Intellij = {
-    enable = true;
-    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nix-config/home-manager/dotconfig/JetBrains/IntelliJIdea2023.3/options/";
-    target = "JetBrains/IntelliJIdea2023.3/options/";
   };
 
   # Nicely reload system units when changing configs

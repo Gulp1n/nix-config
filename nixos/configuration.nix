@@ -148,7 +148,7 @@
     efi.canTouchEfiVariables = true;
   };
 
-  # boot.kernelPackages = pkgs.linuxPackages_zen;
+  boot.kernelPackages = pkgs.linuxPackages_zen;
 
   # Configure your system-wide user settings (groups, etc), add more users as needed.
   users.users = {
@@ -179,12 +179,6 @@
       "JetBrainsMono"
     ]; })
   ];
-
-  # Initiate Tailscale
-  services.tailscale = {
-    enable = true;
-    useRoutingFeatures = "client";
-  };
 
   # This setups a SSH server. Very important if you're setting up a headless system.
   # Feel free to remove if you don't need it.

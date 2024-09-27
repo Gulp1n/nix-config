@@ -77,8 +77,6 @@
     neofetch
     zsh
     kitty
-    git
-    gh
     eza
     dust
 

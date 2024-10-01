@@ -103,8 +103,7 @@
   };
 
   # Enable the KDE Plasma Desktop Environment.
-  services.xserver.enable = true; # this is cursed
-  services.xserver.displayManager.sddm.wayland.enable = true;
+  services.displayManager.sddm.wayland.enable = true;
   services.desktopManager.plasma6.enable = true;
 
   # Remove KDE bloat
@@ -124,7 +123,6 @@
   };
 
   # Enable sound with pipewire.
-  sound.enable = true;
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
@@ -139,7 +137,6 @@
     #media-session.enable = true;
   };
 
-
   # Set your hostname
   networking.hostName = "Gulp1n";
 
@@ -152,10 +149,10 @@
   boot.kernelPackages = pkgs.linuxPackages_zen;
 
   # extra drivers (for parsec mainly)
-  hardware.opengl = {
+  hardware.graphics = {
     enable = true;
-    extraPackages = with pkgs; [
-      vpl-gpu-rt
+    extraPackages = [
+      pkgs.vpl-gpu-rt
     ];
   };
 

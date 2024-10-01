@@ -151,6 +151,14 @@
 
   boot.kernelPackages = pkgs.linuxPackages_zen;
 
+  # extra drivers (for parsec mainly)
+  hardware.opengl = {
+    enable = true;
+    extraPackages = with pkgs; [
+      vpl-gpu-rt
+    ];
+  };
+
   # Configure your system-wide user settings (groups, etc), add more users as needed.
   users.users = {
     gulp1n = {

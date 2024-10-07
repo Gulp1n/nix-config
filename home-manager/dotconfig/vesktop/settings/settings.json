@@ -30,7 +30,7 @@
             "enabled": false
         },
         "MessageAccessoriesAPI": {
-            "enabled": false
+            "enabled": true
         },
         "MessageDecorationsAPI": {
             "enabled": false
@@ -307,9 +307,6 @@
         "OpenInApp": {
             "enabled": false
         },
-        "Party mode 🎉": {
-            "enabled": false
-        },
         "PermissionFreeWill": {
             "enabled": true,
             "lockout": true,
@@ -374,9 +371,6 @@
         "RoleColorEverywhere": {
             "enabled": false
         },
-        "SearchReply": {
-            "enabled": false
-        },
         "SecretRingToneEnabler": {
             "enabled": false
         },
@@ -384,9 +378,6 @@
             "enabled": false
         },
         "ServerListIndicators": {
-            "enabled": false
-        },
-        "ServerProfile": {
             "enabled": false
         },
         "ShikiCodeblocks": {
@@ -402,9 +393,6 @@
             "enabled": false
         },
         "ShowMeYourName": {
-            "enabled": false
-        },
-        "ShowTimeouts": {
             "enabled": false
         },
         "SilentMessageToggle": {
@@ -497,6 +485,72 @@
         },
         "XSOverlay": {
             "enabled": false
+        },
+        "FullSearchContext": {
+            "enabled": false
+        },
+        "PartyMode": {
+            "enabled": false
+        },
+        "ServerInfo": {
+            "enabled": false
+        },
+        "ShowHiddenThings": {
+            "enabled": false
+        },
+        "MessageUpdaterAPI": {
+            "enabled": true
+        },
+        "UserSettingsAPI": {
+            "enabled": true
+        },
+        "AccountPanelServerProfile": {
+            "enabled": false
+        },
+        "AlwaysExpandRoles": {
+            "enabled": false
+        },
+        "AppleMusicRichPresence": {
+            "enabled": false
+        },
+        "WebRichPresence (arRPC)": {
+            "enabled": false
+        },
+        "BetterSessions": {
+            "enabled": false
+        },
+        "BetterSettings": {
+            "enabled": false
+        },
+        "ConsoleJanitor": {
+            "enabled": false
+        },
+        "CopyEmojiMarkdown": {
+            "enabled": false
+        },
+        "CopyFileContents": {
+            "enabled": false
+        },
+        "CtrlEnterSend": {
+            "enabled": false
+        },
+        "CustomIdle": {
+            "enabled": false
+        },
+        "DontRoundMyTimestamps": {
+            "enabled": false
+        },
+        "ImageLink": {
+            "enabled": false
+        },
+        "ImplicitRelationships": {
+            "enabled": false
+        },
+        "MentionAvatars": {
+            "enabled": false
+        },
+        "MessageLatency": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -509,6 +563,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1710861816763
+        "settingsSyncVersion": 1728287328190
     }
 }

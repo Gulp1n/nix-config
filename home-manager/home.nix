@@ -57,6 +57,9 @@
     oh-my-zsh = {
       enable = true;
       theme = "robbyrussell";
+      plugins = [
+        "direnv"
+      ];
 	  };
 
     shellAliases = {
@@ -75,7 +78,6 @@
     # basic opperation
   	firefox
     neofetch
-    zsh
     kitty
     eza
     dust
@@ -84,21 +86,21 @@
     lazygit
     neovim
     nil # nix lsp
+    direnv  
 
     # communication
     whatsapp-for-linux
-    (discord.override { withVencord = true; })
+    # (discord.override { withVencord = true; })
+    vesktop
 
     #productivity
     parsec-bin
     onlyoffice-bin
     onedriver
-    logseq
 
     #media
     vlc
     ffmpeg
-    x32edit
     spotify
 
     #entertainment
@@ -137,6 +139,7 @@
       "workbench.iconTheme" = "catppuccin-latte";
       "editor.fontFamily" = "'JetBrainsMono Nerd Font'";
       "editor.minimap.renderCharacters" = true;
+      "terminal.integrated.persistentSessionReviveProcess" = "never";
       "github.gitAuthentication" = false;
       "git.terminalAuthentication" = false;
 
@@ -156,8 +159,8 @@
   #Dotfiles
   xdg.configFile.Vencord = {
     enable = true;
-    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nix-config/home-manager/dotconfig/vencord/";
-    target = "Vencord/";
+    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nix-config/home-manager/dotconfig/vesktop/";
+    target = "vesktop/";
   };
   xdg.configFile.kitty = {
     enable = true;

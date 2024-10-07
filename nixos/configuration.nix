@@ -152,8 +152,10 @@
   # extra drivers (for parsec mainly)
   hardware.graphics = {
     enable = true;
-    extraPackages = [
-      pkgs.vpl-gpu-rt
+    extraPackages = with pkgs; [
+      vpl-gpu-rt
+      mesa
+      libdrm
     ];
   };
 
@@ -178,6 +180,8 @@
   users.defaultUserShell = pkgs.zsh;
 
   hardware.bluetooth.enable = true;
+
+  services.lorri.enable = true;
 
   # install fonts
   fonts.packages = with pkgs; [

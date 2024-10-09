@@ -4,7 +4,7 @@
     "autoUpdateNotification": true,
     "useQuickCss": true,
     "themeLinks": [
-        "https://raw.githubusercontent.com/catppuccin/discord/main/themes/latte.theme.css"
+        "https://raw.githubusercontent.com/catppuccin/discord/refs/heads/main/themes/latte.theme.css"
     ],
     "enabledThemes": [],
     "enableReactDevtools": false,
@@ -48,7 +48,8 @@
             "enabled": false
         },
         "NoTrack": {
-            "enabled": true
+            "enabled": true,
+            "disableAnalytics": true
         },
         "Settings": {
             "enabled": true,
@@ -64,7 +65,7 @@
             "enabled": false
         },
         "AnonymiseFileNames": {
-            "enabled": false
+            "enabled": true
         },
         "BANger": {
             "enabled": false
@@ -111,7 +112,7 @@
             "enabled": false
         },
         "ConsoleShortcuts": {
-            "enabled": false
+            "enabled": true
         },
         "CopyUserURLs": {
             "enabled": false
@@ -123,7 +124,8 @@
             "enabled": false
         },
         "Dearrow": {
-            "enabled": false
+            "enabled": true,
+            "hideButton": false
         },
         "Decor": {
             "enabled": false
@@ -135,7 +137,8 @@
             "enabled": false
         },
         "Experiments": {
-            "enabled": false
+            "enabled": true,
+            "toolbarDevMenu": false
         },
         "F8Break": {
             "enabled": false
@@ -228,7 +231,11 @@
             "ignoreSelf": false,
             "ignoreUsers": "",
             "ignoreChannels": "",
-            "ignoreGuilds": ""
+            "ignoreGuilds": "",
+            "collapseDeleted": false,
+            "logEdits": true,
+            "logDeletes": true,
+            "inlineEdits": true
         },
         "MessageTags": {
             "enabled": false
@@ -459,7 +466,16 @@
             "enabled": false
         },
         "VcNarrator": {
-            "enabled": true
+            "enabled": false,
+            "joinMessage": "{{USER}} joined",
+            "sayOwnName": false,
+            "latinOnly": false,
+            "voice": "Afrikaans espeak-ng",
+            "volume": 1,
+            "rate": 1,
+            "deafenMessage": "{{USER}} deafened",
+            "undeafenMessage": "{{USER}} undeafened",
+            "leaveMessage": "{{USER}} left"
         },
         "VencordToolbox": {
             "enabled": true
@@ -532,7 +548,9 @@
             "enabled": false
         },
         "CtrlEnterSend": {
-            "enabled": false
+            "enabled": true,
+            "submitRule": "ctrl+enter",
+            "sendMessageInTheMiddleOfACodeBlock": true
         },
         "CustomIdle": {
             "enabled": false
@@ -551,6 +569,61 @@
         },
         "MessageLatency": {
             "enabled": false
+        },
+        "NoMaskedUrlPaste": {
+            "enabled": false
+        },
+        "NoOnboardingDelay": {
+            "enabled": false
+        },
+        "NoServerEmojis": {
+            "enabled": false
+        },
+        "OverrideForumDefaults": {
+            "enabled": false
+        },
+        "PauseInvitesForever": {
+            "enabled": false
+        },
+        "ReplaceGoogleSearch": {
+            "enabled": false
+        },
+        "ReplyTimestamp": {
+            "enabled": false
+        },
+        "Summaries": {
+            "enabled": false
+        },
+        "ShowTimeoutDuration": {
+            "enabled": false
+        },
+        "StickerPaste": {
+            "enabled": false
+        },
+        "StreamerModeOnStream": {
+            "enabled": false
+        },
+        "UnlockedAvatarZoom": {
+            "enabled": false
+        },
+        "ValidReply": {
+            "enabled": false
+        },
+        "VoiceDownload": {
+            "enabled": false
+        },
+        "WebKeybinds": {
+            "enabled": true
+        },
+        "WebScreenShareFixes": {
+            "enabled": true
+        },
+        "YoutubeAdblock": {
+            "enabled": false
+        },
+        "WebContextMenus": {
+            "enabled": true,
+            "addBack": true
         }
     },
     "notifications": {
@@ -563,6 +636,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1728287328190
+        "settingsSyncVersion": 1728391406415
     }
 }

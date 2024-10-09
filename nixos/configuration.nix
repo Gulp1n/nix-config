@@ -153,10 +153,15 @@
   hardware.graphics = {
     enable = true;
     extraPackages = with pkgs; [
+      intel-media-driver
       vpl-gpu-rt
       mesa
       libdrm
     ];
+  };
+
+  environment.sessionVariables = {
+    LIBVA_DRIVER_NAME = "iHD";
   };
 
   # Configure your system-wide user settings (groups, etc), add more users as needed.

@@ -89,8 +89,7 @@
     direnv  
 
     # communication
-    whatsapp-for-linux
-    # (discord.override { withVencord = true; })
+    zapzap # WhatsApp
     vesktop
 
     #productivity

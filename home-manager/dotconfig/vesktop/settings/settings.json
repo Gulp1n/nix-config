@@ -125,7 +125,9 @@
         },
         "Dearrow": {
             "enabled": true,
-            "hideButton": false
+            "hideButton": false,
+            "replaceElements": 0,
+            "dearrowByDefault": true
         },
         "Decor": {
             "enabled": false
@@ -340,14 +342,6 @@
         "PreviewMessage": {
             "enabled": false
         },
-        "PronounDB": {
-            "enabled": true,
-            "pronounsFormat": "LOWERCASE",
-            "pronounSource": 0,
-            "showSelf": true,
-            "showInMessages": true,
-            "showInProfile": true
-        },
         "QuickMention": {
             "enabled": false
         },
@@ -548,7 +542,7 @@
             "enabled": false
         },
         "CtrlEnterSend": {
-            "enabled": true,
+            "enabled": false,
             "submitRule": "ctrl+enter",
             "sendMessageInTheMiddleOfACodeBlock": true
         },
@@ -624,6 +618,14 @@
         "WebContextMenus": {
             "enabled": true,
             "addBack": true
+        },
+        "UserMessagesPronouns": {
+            "enabled": true,
+            "pronounsFormat": "LOWERCASE",
+            "pronounSource": 0,
+            "showSelf": true,
+            "showInMessages": true,
+            "showInProfile": true
         }
     },
     "notifications": {
@@ -636,6 +638,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1728391406415
+        "settingsSyncVersion": 1729710806483
     }
 }

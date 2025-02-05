@@ -59,8 +59,6 @@
     firefox-devedition
     neofetch
     kitty
-    eza
-    dust
 
     # coding
     lazygit
@@ -87,14 +85,8 @@
     openttd
   ];
 
-  # Enable home-manager, git and github
+  # Enable home-manager
   programs.home-manager.enable = true;
-  programs.git = {
-    enable = true;
-    userName = "Gulp1n";
-    userEmail = "abeldenouden@hotmail.com";
-  };
-  programs.gh.enable = true;
 
   # VSCode config
   programs.vscode = {
@@ -134,6 +126,7 @@
       };
     };
   };
+  home-manager.users.gulp1n.programs.zsh.shellAliases = {code = "codium";};
 
   #Dotfiles
   xdg.configFile.Vencord = {

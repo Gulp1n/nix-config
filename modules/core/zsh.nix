@@ -24,8 +24,12 @@
         reboot = "systemctl reboot";
         vim = "nvim";
         lgit = "lazygit";
-        code = "codium";
       };
     };
-  }
+
+    home.packages = with pkgs; [
+      eza
+      dust
+    ];
+  };
 }

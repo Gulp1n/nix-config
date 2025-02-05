@@ -5,18 +5,49 @@
 # NixOS-WSL specific options are documented on the NixOS-WSL repository:
 # https://github.com/nix-community/NixOS-WSL
 
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, inputs, ... }:
 
 {
   imports = [
     # include NixOS-WSL modules
     inputs.nixos-wsl.nixosModules.default
+	  inputs.home-manager.nixosModules.home-manager
     ./modules.nix
   ];
+  
+  nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
 
   wsl.enable = true;
   wsl.defaultUser = "gulp1n";
+  
+	networking.hostName = "FatMan";
 
+  environment.systemPackages = with pkgs; [
+    wget
+  ];
+	
+  programs.zsh.enable = true;
+  users.defaultUserShell = pkgs.zsh;
+
+  programs.nix-ld = {
+		enable = true;
+		package = pkgs.nix-ld-rs; # only for NixOS 24.05
+	};
+	
+	home-manager.users.gulp1n.home = {
+		username = "gulp1n";
+		homeDirectory = "/home/gulp1n";
+		stateVersion = "24.05";
+	};
+	
+	nix.settings = {
+    # Enable flakes and new 'nix' command
+    experimental-features = "nix-command flakes";
+    # Deduplicate and optimize nix store
+    auto-optimise-store = true;
+  };
+	
+	
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
   # on your system were taken. It's perfectly fine and recommended to leave

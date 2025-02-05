@@ -12,5 +12,6 @@ in {
   imports = [
     (coreModule "zsh")
     (coreModule "locale")
+    (coreModule "git")
   ]
 }

@@ -122,7 +122,7 @@
   };
 
   # Set your hostname
-  networking.hostName = "Gulp1n";
+  networking.hostName = "LittleBoy";
 
   # boot loader
   boot.loader = {

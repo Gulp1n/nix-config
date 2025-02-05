@@ -7,10 +7,11 @@
   ...
 }: let
   module = path: ../../modules/${path};
-  coreModule = module "core/${file}.nix";
+  coreModule = file: module "core/${file}.nix";
 in {
   imports = [
     (coreModule "zsh")
     (coreModule "locale")
-  ]
+    (coreModule "git")
+  ];
 }

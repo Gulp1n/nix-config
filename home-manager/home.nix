@@ -18,6 +18,7 @@
 
     # You can also split up your configuration and import pieces of it here:
     # ./nvim.nix
+    ./snake.nix
   ];
 
   nixpkgs = {
@@ -76,7 +77,7 @@
   # programs.neovim.enable = true;
   home.packages = with pkgs; [ 
     # basic opperation
-  	firefox
+    firefox-devedition
     neofetch
     kitty
     eza

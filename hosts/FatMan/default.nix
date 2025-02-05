@@ -10,12 +10,12 @@
 {
   imports = [
     # include NixOS-WSL modules
-    <nixos-wsl/modules>
+    inputs.nixos-wsl.nixosModules.default
+    ./modules.nix
   ];
 
   wsl.enable = true;
   wsl.defaultUser = "gulp1n";
-
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions

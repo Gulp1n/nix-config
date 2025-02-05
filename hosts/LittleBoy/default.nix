@@ -163,13 +163,7 @@
     };
   };
 
-  # enable zsh
-  programs.zsh.enable = true;
-  users.defaultUserShell = pkgs.zsh;
-
   hardware.bluetooth.enable = true;
-
-  services.lorri.enable = true;
 
   # install fonts
   fonts.packages = with pkgs; [

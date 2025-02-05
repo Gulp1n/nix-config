@@ -17,8 +17,11 @@
   
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
 
-  wsl.enable = true;
-  wsl.defaultUser = "gulp1n";
+  wsl = {
+    enable = true;
+    defaultUser = "gulp1n";
+    nativeSystemd = true;
+  };
   
 	networking.hostName = "FatMan";
 
@@ -26,8 +29,6 @@
     wget
   ];
 	
-  programs.zsh.enable = true;
-  users.defaultUserShell = pkgs.zsh;
 
   programs.nix-ld = {
 		enable = true;

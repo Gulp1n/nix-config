@@ -6,6 +6,9 @@
   pkgs,
   ...
 }: {
+  programs.zsh.enable = true;
+  users.defaultUserShell = pkgs.zsh;
+
   home-manager.users.gulp1n = {
     programs.zsh = {
       enable = true;

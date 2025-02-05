@@ -64,7 +64,6 @@
     lazygit
     neovim
     nil # nix lsp
-    direnv  
 
     # communication
     zapzap # WhatsApp

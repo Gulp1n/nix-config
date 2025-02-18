@@ -35,12 +35,6 @@
 		package = pkgs.nix-ld-rs; # only for NixOS 24.05
 	};
 	
-	home-manager.users.gulp1n.home = {
-		username = "gulp1n";
-		homeDirectory = "/home/gulp1n";
-		stateVersion = "24.05";
-	};
-	
 	nix.settings = {
     # Enable flakes and new 'nix' command
     experimental-features = "nix-command flakes";

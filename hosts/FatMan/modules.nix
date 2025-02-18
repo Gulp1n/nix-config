@@ -14,6 +14,7 @@ in {
   imports = [
     (coreModule "locale")
     (coreModule "git")
+    (coreModule "homeManager")
 
     (devModule "lorri")
 

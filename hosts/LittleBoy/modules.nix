@@ -4,21 +4,26 @@
   lib,
   config,
   pkgs,
+  specialArgs,
   ...
 }: let
-  module = path: ../../modules/${path};
+  module = path: (specialArgs.rootPath + /modules/${path});
   coreModule = file: module "core/${file}.nix";
   devModule = file: module "dev/${file}.nix";
   terminalModule = file: module "terminal/${file}.nix";
+  applicationsModule = file: module "applications/${file}.nix";
 in {
   imports = [
     (coreModule "locale")
     (coreModule "git")
+    (coreModule "homeManager")
 
     (devModule "lorri")
     (devModule "codium")
 
     (terminalModule "zsh")
     (terminalModule "comma")
+
+    (applicationsModule "vesktop")
   ];
 }

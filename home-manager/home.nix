@@ -49,11 +49,6 @@
     };
   };
 
-  home = {
-    username = "gulp1n";
-    homeDirectory = "/home/gulp1n";
-  };
-
   # programs.neovim.enable = true;
   home.packages = with pkgs; [ 
     # basic opperation
@@ -68,7 +63,6 @@
 
     # communication
     zapzap # WhatsApp
-    vesktop
 
     #productivity
     parsec-bin
@@ -85,15 +79,7 @@
     openttd
   ];
 
-  # Enable home-manager
-  programs.home-manager.enable = true;
-
   #Dotfiles
-  xdg.configFile.Vencord = {
-    enable = true;
-    source = config.lib.file.mkOutOfStoreSymlink "${rootPath}/home-manager/dotconfig/vesktop/";
-    target = "vesktop/";
-  };
   xdg.configFile.kitty = {
     enable = true;
     source = config.lib.file.mkOutOfStoreSymlink "${rootPath}/home-manager/dotconfig/kitty/";

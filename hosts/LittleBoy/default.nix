@@ -169,11 +169,6 @@
 
   # install fonts
   fonts.packages = with pkgs; [
-    # (nerdfonts.override { fonts = [
-    #   # List nerdfonts you want installed here
-    #   "JetBrainsMono"
-    # ]; })
-
     nerd-fonts.jetbrains-mono
   ];
 

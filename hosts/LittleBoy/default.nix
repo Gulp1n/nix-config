@@ -82,26 +82,11 @@
     auto-optimise-store = true;
   };
 
-  # FIXME: Add the rest of your current configuration
-
-  # Enable networking
-  networking.networkmanager.enable = true;
-
-  # Enable the KDE Plasma Desktop Environment.
-  services.xserver.enable = true;
-  services.displayManager.sddm.wayland.enable = true;
-  services.desktopManager.plasma6.enable = true;
-
-  # Remove KDE bloat
-  environment.plasma6.excludePackages = with pkgs.kdePackages; [
-    kate
-    elisa
-    kwallet
-  ];
-
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
+  # Enable networking
+  networking.networkmanager.enable = true;
   services.avahi = {
     enable = true;
     nssmdns4 = true;

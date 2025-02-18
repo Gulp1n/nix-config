@@ -12,6 +12,7 @@
   devModule = file: module "dev/${file}.nix";
   terminalModule = file: module "terminal/${file}.nix";
   applicationsModule = file: module "applications/${file}.nix";
+  DEModule = file: module "system/${file}";
 in {
   imports = [
     (coreModule "locale")
@@ -25,5 +26,7 @@ in {
     (terminalModule "comma")
 
     (applicationsModule "vesktop")
+
+    (DEModule "KDE")
   ];
 }

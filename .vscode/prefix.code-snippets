@@ -18,6 +18,6 @@
 
 	"prefix": {
 		"prefix": "pre",
-		"body": [ "{", "  inputs,", "  outputs,", "  lib,", "  config,", "  pkgs,", "  specialArgs,", "  ...", "}: {", "  $0", "  home-manager.users.gulp1n = {}", "}" ]
+		"body": [ "{", "  inputs,", "  outputs,", "  lib,", "  config,", "  pkgs,", "  specialArgs,", "  ...", "}: {", "  $0", "  home-manager.users.gulp1n = {};", "}" ]
 	}
 }

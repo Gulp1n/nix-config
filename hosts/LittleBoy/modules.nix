@@ -16,6 +16,7 @@ in {
     (coreModule "git")
 
     (devModule "lorri")
+    (devModule "codium")
 
     (terminalModule "zsh")
     (terminalModule "comma")

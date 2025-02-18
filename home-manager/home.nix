@@ -87,46 +87,6 @@
   # Enable home-manager
   programs.home-manager.enable = true;
 
-  # VSCode config
-  programs.vscode = {
-    enable = true;
-    package = pkgs.vscodium;
-    enableExtensionUpdateCheck = false;
-    extensions = with pkgs.vscode-extensions; [
-      jnoortheen.nix-ide
-      catppuccin.catppuccin-vsc
-      vscodevim.vim
-    ];
-    keybindings = [
-      {
-        key = "ctrl+shift+`";
-        command = "workbench.action.toggleMaximizedPanel";
-      }
-    ];
-    userSettings = {
-      "files.autoSave" = "afterDelay";
-      "workbench.colorTheme" = "Catppuccin Latte";
-      "workbench.iconTheme" = "catppuccin-latte";
-      "editor.fontFamily" = "'JetBrainsMono Nerd Font'";
-      "editor.minimap.renderCharacters" = true;
-      "terminal.integrated.persistentSessionReviveProcess" = "never";
-      "github.gitAuthentication" = false;
-      "git.terminalAuthentication" = false;
-
-      #nix lsp
-      "nix.enableLanguageServer" = true;
-      "nix.serverPath" = "nil";
-      "nix.serverSettings" = {
-        "nil" = {
-          "formatting" = {
-            "command" = ["nixpkgs-fmt"];
-          };
-        };
-      };
-    };
-  };
-  programs.zsh.shellAliases = {code = "codium";};
-
   #Dotfiles
   xdg.configFile.Vencord = {
     enable = true;

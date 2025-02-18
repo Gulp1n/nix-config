@@ -29,7 +29,7 @@
   home-manager = {
     extraSpecialArgs = { inherit inputs outputs; };
     users = {
-      gulp1n = import ../home-manager/home.nix;
+      gulp1n = import ../../home-manager/home.nix;
     };
   };
 
@@ -107,7 +107,7 @@
   };
 
   # Enable sound with pipewire.
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -167,10 +167,12 @@
 
   # install fonts
   fonts.packages = with pkgs; [
-    (nerdfonts.override { fonts = [
-      # List nerdfonts you want installed here
-      "JetBrainsMono"
-    ]; })
+    # (nerdfonts.override { fonts = [
+    #   # List nerdfonts you want installed here
+    #   "JetBrainsMono"
+    # ]; })
+
+    nerd-fonts.jetbrains-mono
   ];
 
   virtualisation.libvirtd.enable = true;

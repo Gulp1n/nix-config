@@ -125,7 +125,7 @@
       };
     };
   };
-  home-manager.users.gulp1n.programs.zsh.shellAliases = {code = "codium";};
+  programs.zsh.shellAliases = {code = "codium";};
 
   #Dotfiles
   xdg.configFile.Vencord = {

@@ -56,7 +56,7 @@
     # Available through 'nixos-rebuild --flake .#your-hostname'
     nixosConfigurations = {
       LittleBoy = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs outputs; rootPath = ./.;};
+        specialArgs = {inherit inputs outputs;};
         modules = [
           ./hosts/LittleBoy
         ];

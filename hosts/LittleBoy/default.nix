@@ -6,7 +6,6 @@
   lib,
   config,
   pkgs,
-  rootPath,
   ...
 }: {
   # You can import other NixOS modules here
@@ -28,9 +27,9 @@
   ];
 
   home-manager = {
-    extraSpecialArgs = { inherit inputs outputs; rootPath = rootPath; };
+    extraSpecialArgs = { inherit inputs outputs; };
     users = {
-      gulp1n = import (rootPath + /home-manager/home.nix);
+      gulp1n = import ../../home-manager/home.nix;
     };
   };
 

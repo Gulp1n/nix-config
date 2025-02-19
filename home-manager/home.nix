@@ -6,7 +6,6 @@
   lib,
   config,
   pkgs,
-  rootPath,
   ...
 }: {
   # You can import other home-manager modules here
@@ -82,7 +81,7 @@
   #Dotfiles
   xdg.configFile.kitty = {
     enable = true;
-    source = config.lib.file.mkOutOfStoreSymlink "${rootPath}/home-manager/dotconfig/kitty/";
+    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nix-config/home-manager/dotconfig/kitty/";
     target = "kitty/";
   };
 

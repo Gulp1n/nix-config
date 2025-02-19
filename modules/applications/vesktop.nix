@@ -15,7 +15,7 @@
 
     xdg.configFile.vesktop = {
       enable = true;
-      source = config.lib.file.mkOutOfStoreSymlink "${specialArgs.rootPath}/home-manager/dotconfig/vesktop/";
+      source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nix-config/home-manager/dotconfig/vesktop/";
       target = "vesktop/";
     };
   };

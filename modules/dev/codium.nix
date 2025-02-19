@@ -41,6 +41,9 @@
             "formatting" = {
               "command" = ["nixpkgs-fmt"];
             };
+            "diagnostics" = {
+              "ignored" = ["unused_binding"];
+            };
           };
         };
       };

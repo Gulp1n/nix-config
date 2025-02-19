@@ -20,7 +20,6 @@
   wsl = {
     enable = true;
     defaultUser = "gulp1n";
-    nativeSystemd = true;
   };
   
 	networking.hostName = "FatMan";

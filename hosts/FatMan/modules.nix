@@ -19,5 +19,6 @@ in {
     (devModule "lorri")
 
     (terminalModule "zsh")
+    (terminalModule "comma")
   ];
 }

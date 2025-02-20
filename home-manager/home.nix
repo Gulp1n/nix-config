@@ -56,9 +56,7 @@
     kitty
 
     # coding
-    lazygit
     neovim
-    nil # nix lsp
 
     # communication
     zapzap # WhatsApp

@@ -49,5 +49,9 @@
       };
     };
     programs.zsh.shellAliases = {code = "codium";};
+
+    home.packages = with pkgs; [
+      nil # nix lsp
+    ];
   };
 }

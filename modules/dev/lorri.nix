@@ -6,10 +6,11 @@
   pkgs,
   ...
 }: {
-  
-  services.lorri.enable = true;
+  home-manager.users.gulp1n = {
+    services.lorri.enable = true;
 
-  home-manager.users.gulp1n.home.packages = with pkgs; [
-    direnv
-  ];
+    home.packages = with pkgs; [
+      direnv
+    ];
+  };
 }

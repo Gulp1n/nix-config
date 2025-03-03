@@ -26,6 +26,8 @@
 
   environment.systemPackages = with pkgs; [
     wget
+
+    nil # nix lsp
   ];
 	
 

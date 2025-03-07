@@ -74,6 +74,7 @@
     #entertainment
     prismlauncher
     openttd
+    (callPackage ../pkgs/yetris.nix {})
   ];
 
   #Dotfiles

@@ -3,10 +3,10 @@
     "autoUpdate": false,
     "autoUpdateNotification": true,
     "useQuickCss": true,
-    "themeLinks": [
-        "https://raw.githubusercontent.com/catppuccin/discord/refs/heads/main/themes/latte.theme.css"
+    "themeLinks": [],
+    "enabledThemes": [
+        "latte.theme.css"
     ],
-    "enabledThemes": [],
     "enableReactDevtools": false,
     "frameless": false,
     "transparent": false,
@@ -652,7 +652,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1739871564986
+        "settingsSyncVersion": 1743410852266
     },
     "eagerPatches": false
 }

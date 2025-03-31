@@ -27,6 +27,7 @@ in {
     (terminalModule "comma")
 
     (applicationsModule "vesktop")
+    (applicationsModule "steam")
 
     (DEModule "KDE")
   ];

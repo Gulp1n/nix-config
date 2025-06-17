@@ -7,9 +7,11 @@
   specialArgs,
   ...
 }: {
-  services.xserver.enable = true;
-  services.displayManager.sddm.wayland.enable = true;
-  services.desktopManager.plasma6.enable = true;
+  serivces = {
+    displayManager.sddm.enable = true;
+    displayManager.sddm.wayland.enable = true;
+    desktopManager.plasma6.enable = true;
+  };
 
   # Remove KDE bloat
   environment.plasma6.excludePackages = with pkgs.kdePackages; [

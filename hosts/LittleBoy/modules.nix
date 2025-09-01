@@ -21,7 +21,7 @@ in {
 
     (devModule "lorri")
     (devModule "codium")
-    (devModule "rustRover")
+    (devModule "intellij")
 
     (terminalModule "zsh")
     (terminalModule "comma")

@@ -19,7 +19,6 @@ in {
     (coreModule "git")
     (coreModule "homeManager")
 
-    (devModule "lorri")
     (devModule "devenv")
     (devModule "codium")
     (devModule "intellij")
